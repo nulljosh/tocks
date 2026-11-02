@@ -17,7 +17,6 @@ v1 is live: full iOS Clock parity (see `GAPS.md`, 22 of 22). Every version below
 
 ## v7: everywhere else
 - [ ] Linux: Flatpak and a .deb that open the same app.
-- [ ] Joshua Tree: a native Horula for the Joshua Tree OS.
 
 ## v8: nightstand faces
 
