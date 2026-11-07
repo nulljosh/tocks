@@ -88,3 +88,6 @@ App Store screens of Alarmy, Rise, Sleep Cycle, MultiTimer, Timer+, World Clock 
 ## v22.2: rain
 
 ## Ingested 2026-10-30
+
+## Ingested 2026-11-06
+- [ ] iPhone shows "App Not Available in your country or region" because iOS 6.0.0 is REJECTED and only macOS 6.0.0 is live (checked with `asc` 2026-11-06). It is not a territory setting. Read the rejection and get iOS through; nothing goes to Apple without Joshua's yes. (notes/attachments/2026-11-06/horula-1.png, horula-2.png)
