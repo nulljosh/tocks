@@ -28,6 +28,7 @@ iOS Clock on the web: world clocks, alarms, sleep, stopwatch, timers, nightstand
 - Native gates, not the web ones: Swift tests pass, generic builds pass for every platform, `asc validate`, then the first `asc review submit` (the real gate). Tag `clearclock-native-vN.0.0`.
 
 ## The loop
+The current loop handoff is in `docs/LOOP-HANDOFF.md`; read it before a tick.
 A `/loop` ships `roadmap.md` one version at a time and extends it toward v100. Each tick: build the next open version, `node --test`, headless QA at 390px light and dark, deploy, commit, push, tag.
 
 ## Brand
