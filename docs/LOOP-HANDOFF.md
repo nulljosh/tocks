@@ -8,7 +8,7 @@ A `/loop` working through this repo's roadmap and GitHub issues, with the sessio
 
 Horula is now Clear Clock. The repo and folder are `clearclock`, the site is clearclock.jaybulb.com, and the App Store app is 6826916379.
 
-iOS 6.0.1 was submitted on 2026-11-08 and is waiting for App Review. iOS and Mac 6.0.0 are on sale. The App Store name is still the one Apple accepted for 6.0.0, so the store listing wording needs a check when 6.0.1 clears.
+iOS 6.0.1 was submitted on 2026-11-08 and is waiting for App Review. iOS and Mac 6.0.0 are on sale.
 
 Open roadmap items: the Apple Watch app (built, screenshots taken, ships in 6.1 on Joshua's yes) and the Linux Flatpak and .deb. The name item is done.
 
