@@ -1,6 +1,6 @@
-# Noonday roadmap
+# Clear Clock roadmap
 
-v1 is live: full iOS Clock parity (see `GAPS.md`, 22 of 22). Every version below ships on its own: tested headless at 390px in light and dark, deployed with `./deploy.sh`, `CACHE` bumped in `sw.js`, tagged `noonday-vN.0.0` (`clock-v1` to `v5` before the rename). Web only, no build, no dependencies, no account. Every version also closes the open `GAPS.md` round 2 lines (iOS 26 and macOS Clock) that fit it.
+v1 is live: full iOS Clock parity (see `GAPS.md`, 22 of 22). Every version below ships on its own: tested headless at 390px in light and dark, deployed with `./deploy.sh`, `CACHE` bumped in `sw.js`, tagged `clearclock-vN.0.0` (`clock-v1` to `v5` before the rename). Web only, no build, no dependencies, no account. Every version also closes the open `GAPS.md` round 2 lines (iOS 26 and macOS Clock) that fit it.
 
 ## v2: a floor under it
 
@@ -13,7 +13,7 @@ v1 is live: full iOS Clock parity (see `GAPS.md`, 22 of 22). Every version below
 ## v5.1: landing that moves
 
 ## v6: native on the App Store
-- [ ] Apple Watch app: built (world clock, stopwatch, timers, face widgets), screenshots taken (apple/shots/watch-up, gitignored). Ships in 6.1 right after 6.0 is approved: embed NoondayWatch in the iOS target, bump, upload, add the Watch Ultra set, submit.
+- [ ] Apple Watch app: built (world clock, stopwatch, timers, face widgets), screenshots taken (apple/shots/watch-up, gitignored). Ships in 6.1 right after 6.0 is approved: embed ClearClockWatch in the iOS target, bump, upload, add the Watch Ultra set, submit.
 
 ## v7: everywhere else
 - [ ] Linux: Flatpak and a .deb that open the same app.

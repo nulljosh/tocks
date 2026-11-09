@@ -111,16 +111,16 @@ struct NextAlarmWidget: Widget {
 /// AlarmKit draws snoozes and timers as a Live Activity on the Lock Screen and in the Dynamic Island.
 struct AlarmActivity: Widget {
     var body: some WidgetConfiguration {
-        ActivityConfiguration(for: AlarmAttributes<NoondayAlarm>.self) { ctx in
+        ActivityConfiguration(for: AlarmAttributes<ClearClockAlarm>.self) { ctx in
             HStack {
-                Text(ctx.attributes.metadata?.label ?? "Noonday").font(.headline)
+                Text(ctx.attributes.metadata?.label ?? "Clear Clock").font(.headline)
                 Spacer()
                 countdown(ctx.state).font(.system(size: 34, weight: .light)).monospacedDigit()
             }
-            .padding().tint(.noonday)
+            .padding().tint(.clearClock)
         } dynamicIsland: { ctx in
             DynamicIsland {
-                DynamicIslandExpandedRegion(.leading) { Text(ctx.attributes.metadata?.label ?? "Noonday") }
+                DynamicIslandExpandedRegion(.leading) { Text(ctx.attributes.metadata?.label ?? "Clear Clock") }
                 DynamicIslandExpandedRegion(.trailing) { countdown(ctx.state).monospacedDigit() }
             } compactLeading: { Image(systemName: "timer") } compactTrailing: { countdown(ctx.state).monospacedDigit().frame(maxWidth: 56) } minimal: { Image(systemName: "timer") }
         }
@@ -137,7 +137,7 @@ struct AlarmActivity: Widget {
 #endif
 
 @main
-struct NoondayWidgets: WidgetBundle {
+struct ClearClockWidgets: WidgetBundle {
     var body: some Widget {
         WorldWidget()
         NextAlarmWidget()

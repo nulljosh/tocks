@@ -1471,72 +1471,72 @@
         }
       }
     },
-    "Alarms are turned off for Noonday in Settings, so they cannot ring.": {
+    "Alarms are turned off for Clear Clock in Settings, so they cannot ring.": {
       "localizations": {
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "منبهات Noonday متوقفة في الإعدادات، لذا لا يمكنها أن ترن."
+            "value": "منبهات Clear Clock متوقفة في الإعدادات، لذا لا يمكنها أن ترن."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Wecker für Noonday sind in den Einstellungen aus und können nicht klingeln."
+            "value": "Wecker für Clear Clock sind in den Einstellungen aus und können nicht klingeln."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Las alarmas de Noonday están desactivadas en Ajustes, así que no pueden sonar."
+            "value": "Las alarmas de Clear Clock están desactivadas en Ajustes, así que no pueden sonar."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Les alarmes de Noonday sont désactivées dans Réglages, elles ne peuvent donc pas sonner."
+            "value": "Les alarmes de Clear Clock sont désactivées dans Réglages, elles ne peuvent donc pas sonner."
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "सेटिंग्स में Noonday के अलार्म बंद हैं, इसलिए वे बज नहीं सकते।"
+            "value": "सेटिंग्स में Clear Clock के अलार्म बंद हैं, इसलिए वे बज नहीं सकते।"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Le sveglie di Noonday sono disattivate in Impostazioni, quindi non possono suonare."
+            "value": "Le sveglie di Clear Clock sono disattivate in Impostazioni, quindi non possono suonare."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "設定でNoondayのアラームがオフになっているため、鳴りません。"
+            "value": "設定でClear Clockのアラームがオフになっているため、鳴りません。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "설정에서 Noonday 알람이 꺼져 있어 울릴 수 없습니다."
+            "value": "설정에서 Clear Clock 알람이 꺼져 있어 울릴 수 없습니다."
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Wekkers voor Noonday staan uit in Instellingen, dus ze kunnen niet afgaan."
+            "value": "Wekkers voor Clear Clock staan uit in Instellingen, dus ze kunnen niet afgaan."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Os alarmes do Noonday estão desativados em Ajustes, então não podem tocar."
+            "value": "Os alarmes do Clear Clock estão desativados em Ajustes, então não podem tocar."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "Noonday 的闹钟已在设置中关闭，因此无法响铃。"
+            "value": "Clear Clock 的闹钟已在设置中关闭，因此无法响铃。"
           }
         }
       }
@@ -6791,72 +6791,72 @@
         }
       }
     },
-    "One file with your alarms, cities and timers. Works with Noonday on the web too.": {
+    "One file with your alarms, cities and timers. Works with Clear Clock on the web too.": {
       "localizations": {
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "ملف واحد بمنبهاتك ومدنك ومؤقتاتك. يعمل مع Noonday على الويب أيضًا."
+            "value": "ملف واحد بمنبهاتك ومدنك ومؤقتاتك. يعمل مع Clear Clock على الويب أيضًا."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Eine Datei mit deinen Weckern, Städten und Timern. Funktioniert auch mit Noonday im Web."
+            "value": "Eine Datei mit deinen Weckern, Städten und Timern. Funktioniert auch mit Clear Clock im Web."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Un archivo con tus alarmas, ciudades y temporizadores. También funciona con Noonday en la web."
+            "value": "Un archivo con tus alarmas, ciudades y temporizadores. También funciona con Clear Clock en la web."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Un fichier avec vos alarmes, villes et minuteurs. Fonctionne aussi avec Noonday sur le web."
+            "value": "Un fichier avec vos alarmes, villes et minuteurs. Fonctionne aussi avec Clear Clock sur le web."
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "आपके अलार्म, शहर और टाइमर एक फ़ाइल में। वेब पर Noonday के साथ भी चलती है।"
+            "value": "आपके अलार्म, शहर और टाइमर एक फ़ाइल में। वेब पर Clear Clock के साथ भी चलती है।"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Un file con sveglie, città e timer. Funziona anche con Noonday sul web."
+            "value": "Un file con sveglie, città e timer. Funziona anche con Clear Clock sul web."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "アラーム、都市、タイマーを1つのファイルに。Web版のNoondayでも使えます。"
+            "value": "アラーム、都市、タイマーを1つのファイルに。Web版のClear Clockでも使えます。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "알람, 도시, 타이머를 파일 하나로. 웹의 Noonday에서도 됩니다."
+            "value": "알람, 도시, 타이머를 파일 하나로. 웹의 Clear Clock에서도 됩니다."
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Eén bestand met je wekkers, steden en timers. Werkt ook met Noonday op het web."
+            "value": "Eén bestand met je wekkers, steden en timers. Werkt ook met Clear Clock op het web."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Um arquivo com seus alarmes, cidades e timers. Funciona também com o Noonday na web."
+            "value": "Um arquivo com seus alarmes, cidades e timers. Funciona também com o Clear Clock na web."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "一个文件包含你的闹钟、城市和计时器，也适用于网页版 Noonday。"
+            "value": "一个文件包含你的闹钟、城市和计时器，也适用于网页版 Clear Clock。"
           }
         }
       }
@@ -10991,72 +10991,72 @@
         }
       }
     },
-    "That file is not a Noonday backup": {
+    "That file is not a Clear Clock backup": {
       "localizations": {
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "هذا الملف ليس نسخة Noonday"
+            "value": "هذا الملف ليس نسخة Clear Clock"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Diese Datei ist kein Noonday-Backup"
+            "value": "Diese Datei ist kein Clear Clock-Backup"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ese archivo no es una copia de Noonday"
+            "value": "Ese archivo no es una copia de Clear Clock"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ce fichier n’est pas une sauvegarde Noonday"
+            "value": "Ce fichier n’est pas une sauvegarde Clear Clock"
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "यह Noonday बैकअप नहीं है"
+            "value": "यह Clear Clock बैकअप नहीं है"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Questo file non è un backup di Noonday"
+            "value": "Questo file non è un backup di Clear Clock"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "Noonday のバックアップではありません"
+            "value": "Clear Clock のバックアップではありません"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "Noonday 백업 파일이 아닙니다"
+            "value": "Clear Clock 백업 파일이 아닙니다"
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Dat is geen Noonday-back-up"
+            "value": "Dat is geen Clear Clock-back-up"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Esse arquivo não é um backup do Noonday"
+            "value": "Esse arquivo não é um backup do Clear Clock"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "这不是 Noonday 备份文件"
+            "value": "这不是 Clear Clock 备份文件"
           }
         }
       }

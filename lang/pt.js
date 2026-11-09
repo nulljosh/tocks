@@ -166,7 +166,7 @@
   "Import": "Importar",
   "Backup saved": "Backup salvo",
   "Restored {0} alarms and {1} cities": "{0} alarmes e {1} cidades restaurados",
-  "That file is not a Noonday backup": "Esse arquivo não é um backup do Noonday",
+  "That file is not a Clear Clock backup": "Esse arquivo não é um backup do Clear Clock",
   "That backup is empty": "Esse backup está vazio",
   "That link does not do anything": "Esse link não faz nada",
   "Timer for {0}": "Timer de {0}",

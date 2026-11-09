@@ -166,7 +166,7 @@
   "Import": "Importeer",
   "Backup saved": "Back-up bewaard",
   "Restored {0} alarms and {1} cities": "{0} wekkers en {1} steden hersteld",
-  "That file is not a Noonday backup": "Dat is geen Noonday-back-up",
+  "That file is not a Clear Clock backup": "Dat is geen Clear Clock-back-up",
   "That backup is empty": "Die back-up is leeg",
   "That link does not do anything": "Die link doet niets",
   "Timer for {0}": "Timer van {0}",

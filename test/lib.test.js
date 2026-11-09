@@ -97,7 +97,7 @@ test('backup round trip, and import refuses junk', () => {
     recents: [{ dur: 300000, label: 'Tea', sound: 'Chimes' }], sleep: { on: true, bed: '23:00', wake: '07:00', days: [0, 1], wind: 30, sound: 'Gentle', snooze: true } };
   const back = L.parseBackup(L.makeBackup(state));
   assert.equal(back.alarms[0].label, 'Gym'); assert.equal(back.alarms[0].snoozeMin, 5); assert.equal(back.zones[0].zone, 'Asia/Tokyo'); assert.equal(back.zones[0].nick, 'Office'); assert.ok(!('nick' in back.zones[1])); assert.equal(back.sleep.wake, '07:00');
-  assert.throws(() => L.parseBackup('nope'), /not a Noonday backup/); assert.throws(() => L.parseBackup('{"app":"other","v":1}'), /not a Noonday backup/);
+  assert.throws(() => L.parseBackup('nope'), /not a Clear Clock backup/); assert.throws(() => L.parseBackup('{"app":"other","v":1}'), /not a Clear Clock backup/);
   const dirty = L.parseBackup(JSON.stringify({ app: 'clock', v: 1, alarms: [{ time: '99:99' }, { time: '06:00', days: [9, 1, 1], label: 'x'.repeat(500), snoozeMin: 99 }], zones: [{ city: 'X', zone: 'Mars/Base' }] }));
   assert.deepEqual(dirty.alarms.map(a => [a.time, a.days, a.label.length, a.snoozeMin]), [['06:00', [1], 40, 9]]);
   assert.deepEqual(dirty.zones, []);
@@ -111,7 +111,7 @@ test('offline shell covers the app and the cache follows the version', () => {
   for (const [, f] of html.matchAll(/(?:src|href)="([^"?#:]+\.(?:js|css))"/g)) assert.ok(shell.includes(f), `${f} missing from SHELL`);
   for (const f of shell) if (f !== './') assert.ok(fs.existsSync(path.join(root, f === 'app' ? 'app.html' : f)), `${f} in SHELL but not on disk`);
   assert.ok(!shell.some(f => f.endsWith('.html')), 'SHELL must use clean URLs, the host redirects .html');
-  assert.match(sw, new RegExp(`const CACHE = 'noonday-${L.VERSION.replaceAll('.', '\\.')}'`));
+  assert.match(sw, new RegExp(`const CACHE = 'clearclock-${L.VERSION.replaceAll('.', '\\.')}'`));
 });
 
 test('hand angles in a city', () => {
@@ -209,7 +209,7 @@ test('every UI string has all 11 translations with the same blanks, and the page
   }
   let html = fs.readFileSync(path.join(root, 'app.html'), 'utf8').replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>|<svg[\s\S]*?<\/svg>|<kbd>[^<]*<\/kbd>/g, '');
   const texts = [...html.matchAll(/>([^<>]+)</g), ...html.matchAll(/(?:aria-label|placeholder)="([^"]+)"/g)].map(m => m[1].trim())
-    .filter(s => s && /[a-z]{2}/.test(s) && !['Noonday', 'noonday.jaybulb.com'].includes(s));
+    .filter(s => s && /[a-z]{2}/.test(s) && !['Clear Clock', 'clearclock.jaybulb.com'].includes(s));
   const missing = [...new Set(texts)].filter(s => !ctx.T[s]);
   assert.deepEqual(missing, [], 'add these to i18n.js');
 });

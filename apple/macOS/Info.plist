@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>NSAlarmKitUsageDescription</key>
-	<string>Noonday rings your alarms and timers on time, even when the app is closed or your phone is on silent.</string>
+	<string>Clear Clock rings your alarms and timers on time, even when the app is closed or your phone is on silent.</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
 			<key>CFBundleURLName</key>
 			<string>com.nulljosh.clock</string>
 			<key>CFBundleURLSchemes</key>
-			<array><string>noonday</string></array>
+			<array><string>clearclock</string><string>horula</string></array>
 		</dict>
 	</array>
 </dict>
