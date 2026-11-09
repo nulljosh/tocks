@@ -9,7 +9,7 @@ import SwiftUI
 // The reason a native app exists: alarms ring with the app closed and the phone locked.
 // iPhone uses AlarmKit (iOS 26), which rings through silent mode like Apple's Clock.
 // Mac and Watch have no AlarmKit, so they fall back to time sensitive notifications.
-// Every sync cancels what Clear Clock scheduled and schedules the current list again: one source of truth, the Store.
+// Every sync cancels what Tocks scheduled and schedules the current list again: one source of truth, the Store.
 
 @Observable
 final class AlarmScheduler {
@@ -34,13 +34,13 @@ final class AlarmScheduler {
                 ? AlarmPresentation.Alert(title: LocalizedStringResource(stringLiteral: label), secondaryButton: AlarmButton(text: "Snooze", textColor: .white, systemImageName: "zzz"), secondaryButtonBehavior: .countdown)
                 : AlarmPresentation.Alert(title: LocalizedStringResource(stringLiteral: label))
             let presentation = AlarmPresentation(alert: alert, countdown: .init(title: "Snoozing"))
-            let attributes = AlarmAttributes<ClearClockAlarm>(presentation: presentation, metadata: ClearClockAlarm(label: label), tintColor: .clearClock)
+            let attributes = AlarmAttributes<TocksAlarm>(presentation: presentation, metadata: TocksAlarm(label: label), tintColor: .tocks)
             let config = AlarmManager.AlarmConfiguration(countdownDuration: snooze > 0 ? .init(preAlert: nil, postAlert: TimeInterval(snooze * 60)) : nil, schedule: schedule, attributes: attributes)
             _ = try? await m.schedule(id: id, configuration: config)
         }
         // ponytail: each check's second ring is one fixed alarm for the next ring only; opening the app or tapping I'm Up schedules the next.
         for (a, rang) in store.pendingChecks() {
-            let attributes = AlarmAttributes<ClearClockAlarm>(presentation: AlarmPresentation(alert: .init(title: "Wake Up Check")), metadata: ClearClockAlarm(label: a.label), tintColor: .clearClock)
+            let attributes = AlarmAttributes<TocksAlarm>(presentation: AlarmPresentation(alert: .init(title: "Wake Up Check")), metadata: TocksAlarm(label: a.label), tintColor: .tocks)
             _ = try? await m.schedule(id: Self.checkID(a.id), configuration: .init(schedule: .fixed(rang.addingTimeInterval(Clockwork.checkGap)), attributes: attributes))
         }
         #else
@@ -77,7 +77,7 @@ final class AlarmScheduler {
             guard let end = t.end, end > .now else { continue }
             let label = t.label.isEmpty ? "Timer" : t.label
             let presentation = AlarmPresentation(alert: .init(title: LocalizedStringResource(stringLiteral: label)), countdown: .init(title: LocalizedStringResource(stringLiteral: label)))
-            let attributes = AlarmAttributes<ClearClockAlarm>(presentation: presentation, metadata: ClearClockAlarm(label: label), tintColor: .clearClock)
+            let attributes = AlarmAttributes<TocksAlarm>(presentation: presentation, metadata: TocksAlarm(label: label), tintColor: .tocks)
             _ = try? await m.schedule(id: t.id, configuration: .timer(duration: end.timeIntervalSinceNow, attributes: attributes))
         }
         return

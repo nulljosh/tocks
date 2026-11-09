@@ -1,4 +1,4 @@
-# Clear Clock loop handoff (2026-11-08, evening)
+# Tocks loop handoff (2026-11-08, evening)
 
 ## What the loop is
 
@@ -6,7 +6,7 @@ A `/loop` working through this repo's roadmap and GitHub issues, with the sessio
 
 ## Where things stand
 
-Horula is now Clear Clock. The repo and folder are `clearclock`, the site is clearclock.jaybulb.com, and the App Store app is 6826916379.
+Horula is now Tocks. The repo and folder are `tocks`, the site is tocks.jaybulb.com, and the App Store app is 6826916379.
 
 iOS 6.0.1 was submitted on 2026-11-08 and is waiting for App Review. iOS and Mac 6.0.0 are on sale.
 

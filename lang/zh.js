@@ -166,7 +166,7 @@
   "Import": "导入",
   "Backup saved": "已保存备份",
   "Restored {0} alarms and {1} cities": "已恢复 {0} 个闹钟和 {1} 个城市",
-  "That file is not a Clear Clock backup": "这不是 Clear Clock 备份文件",
+  "That file is not a Tocks backup": "这不是 Tocks 备份文件",
   "That backup is empty": "备份为空",
   "That link does not do anything": "此链接无效",
   "Timer for {0}": "{0} 计时器",

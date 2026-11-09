@@ -1,6 +1,6 @@
 # Product Hunt
 
-Name: Clear Clock
+Name: Tocks
 
 Tagline (44): The iPhone Clock, on every screen you own.
 
@@ -11,15 +11,15 @@ Topics: Productivity, Web App, Mac, iOS
 Pricing: Free.
 
 Links
-Web: https://clearclock.jaybulb.com/?ref=ph
+Web: https://tocks.jaybulb.com/?ref=ph
 App Store: https://apps.apple.com/app/id6826916379 (add only once 6.0.0 is approved)
-GitHub: https://github.com/nulljosh/labs/tree/main/clearclock
+GitHub: https://github.com/nulljosh/labs/tree/main/tocks
 
 ## First comment
 
-Hi, I'm Josh, I built Clear Clock.
+Hi, I'm Josh, I built Tocks.
 
-The iPhone Clock app is the best small tool on the phone, and I wanted it on my Mac and on the Windows laptop at work. So Clear Clock is the same set of tools: world clocks with small AM and PM, alarms with snooze and skip next, a bedtime schedule, a stopwatch with an analog dial, timers you can pin, and a nightstand mode that dims and drifts so the screen never burns in.
+The iPhone Clock app is the best small tool on the phone, and I wanted it on my Mac and on the Windows laptop at work. So Tocks is the same set of tools: world clocks with small AM and PM, alarms with snooze and skip next, a bedtime schedule, a stopwatch with an analog dial, timers you can pin, and a nightstand mode that dims and drifts so the screen never burns in.
 
 A few things the iPhone does not do: a world map with the real line between day and night, a slider to find an hour that works across cities, interval timers, and a clock you can drop on any web page with one iframe.
 

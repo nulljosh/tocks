@@ -1,4 +1,4 @@
-name: ClearClock
+name: Tocks
 options:
   bundleIdPrefix: com.nulljosh
   deploymentTarget:
@@ -16,53 +16,53 @@ settings:
     CODE_SIGN_STYLE: Automatic
     ENABLE_USER_SCRIPT_SANDBOXING: NO
     GENERATE_INFOPLIST_FILE: YES
-    INFOPLIST_KEY_CFBundleDisplayName: "Clear Clock"
+    INFOPLIST_KEY_CFBundleDisplayName: "Tocks"
     INFOPLIST_KEY_ITSAppUsesNonExemptEncryption: NO
 
 targets:
-  ClearClock-iOS:
+  Tocks-iOS:
     type: application
     platform: iOS
     sources:
       - path: App
       - path: Shared
-      - path: ../ClearClock.icon
+      - path: ../Tocks.icon
     dependencies:
-      - target: ClearClockWidgets-iOS
-      # ClearClockWatch joins in 6.1: Watch screenshots need a watchOS simulator runtime (no disk for it on 2026-10-25)
+      - target: TocksWidgets-iOS
+      # TocksWatch joins in 6.1: Watch screenshots need a watchOS simulator runtime (no disk for it on 2026-10-25)
     settings:
       base:
-        PRODUCT_NAME: ClearClock
+        PRODUCT_NAME: Tocks
         PRODUCT_BUNDLE_IDENTIFIER: com.nulljosh.clock   # kept from before the rename: it is the App Store record's id
         INFOPLIST_FILE: iOS/Info.plist
-        CODE_SIGN_ENTITLEMENTS: iOS/ClearClock.entitlements
+        CODE_SIGN_ENTITLEMENTS: iOS/Tocks.entitlements
         TARGETED_DEVICE_FAMILY: "1"                      # iPhone first; iPad needs its own screenshot set
-        ASSETCATALOG_COMPILER_APPICON_NAME: ClearClock
+        ASSETCATALOG_COMPILER_APPICON_NAME: Tocks
         INFOPLIST_KEY_UILaunchScreen_Generation: YES
         INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
         INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.utilities
 
-  ClearClock-macOS:
+  Tocks-macOS:
     type: application
     platform: macOS
     sources:
       - path: App
       - path: Shared
-      - path: ../ClearClock.icon
+      - path: ../Tocks.icon
     dependencies:
-      - target: ClearClockWidgets-macOS
+      - target: TocksWidgets-macOS
     settings:
       base:
-        PRODUCT_NAME: ClearClock
+        PRODUCT_NAME: Tocks
         PRODUCT_BUNDLE_IDENTIFIER: com.nulljosh.clock   # same id as iOS: universal purchase, one App Store record
         INFOPLIST_FILE: macOS/Info.plist
-        CODE_SIGN_ENTITLEMENTS: macOS/ClearClock.entitlements
+        CODE_SIGN_ENTITLEMENTS: macOS/Tocks.entitlements
         ENABLE_HARDENED_RUNTIME: YES
-        ASSETCATALOG_COMPILER_APPICON_NAME: ClearClock
+        ASSETCATALOG_COMPILER_APPICON_NAME: Tocks
         INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.utilities
-        PRODUCT_MODULE_NAME: ClearClock_macOS
+        PRODUCT_MODULE_NAME: Tocks_macOS
 
-  ClearClockWidgets-iOS:
+  TocksWidgets-iOS:
     type: app-extension
     platform: iOS
     sources: &widgetSources
@@ -71,59 +71,59 @@ targets:
         excludes: ["AlarmScheduler.swift"]
     settings:
       base:
-        PRODUCT_NAME: ClearClockWidgets
+        PRODUCT_NAME: TocksWidgets
         PRODUCT_BUNDLE_IDENTIFIER: com.nulljosh.clock.widgets
         CODE_SIGN_ENTITLEMENTS: Widgets/Widgets.entitlements
         TARGETED_DEVICE_FAMILY: "1"
-        INFOPLIST_KEY_CFBundleDisplayName: "Clear Clock"
+        INFOPLIST_KEY_CFBundleDisplayName: "Tocks"
         INFOPLIST_FILE: Widgets/Info.plist
         APPLICATION_EXTENSION_API_ONLY: YES
 
-  ClearClockWidgets-macOS:
+  TocksWidgets-macOS:
     type: app-extension
     platform: macOS
     sources: *widgetSources
     settings:
       base:
-        PRODUCT_NAME: ClearClockWidgets
+        PRODUCT_NAME: TocksWidgets
         PRODUCT_BUNDLE_IDENTIFIER: com.nulljosh.clock.widgets
         CODE_SIGN_ENTITLEMENTS: Widgets/Widgets-mac.entitlements
-        INFOPLIST_KEY_CFBundleDisplayName: "Clear Clock"
+        INFOPLIST_KEY_CFBundleDisplayName: "Tocks"
         INFOPLIST_FILE: Widgets/Info.plist
         APPLICATION_EXTENSION_API_ONLY: YES
-        PRODUCT_MODULE_NAME: ClearClockWidgets_macOS
+        PRODUCT_MODULE_NAME: TocksWidgets_macOS
 
-  ClearClockWatch:
+  TocksWatch:
     type: application
     platform: watchOS
     sources:
       - path: Watch
       - path: Shared
-      - path: ../ClearClock.icon
+      - path: ../Tocks.icon
     dependencies:
-      - target: ClearClockWatchWidgets
+      - target: TocksWatchWidgets
     settings:
       base:
-        PRODUCT_NAME: ClearClock
+        PRODUCT_NAME: Tocks
         PRODUCT_BUNDLE_IDENTIFIER: com.nulljosh.clock.watchkitapp
         INFOPLIST_KEY_WKCompanionAppBundleIdentifier: com.nulljosh.clock
         INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp: YES
-        ASSETCATALOG_COMPILER_APPICON_NAME: ClearClock
+        ASSETCATALOG_COMPILER_APPICON_NAME: Tocks
         SKIP_INSTALL: YES
 
-  ClearClockWatchWidgets:
+  TocksWatchWidgets:
     type: app-extension
     platform: watchOS
     sources: *widgetSources
     settings:
       base:
-        PRODUCT_NAME: ClearClockWatchWidgets
+        PRODUCT_NAME: TocksWatchWidgets
         PRODUCT_BUNDLE_IDENTIFIER: com.nulljosh.clock.watchkitapp.widgets
-        INFOPLIST_KEY_CFBundleDisplayName: "Clear Clock"
+        INFOPLIST_KEY_CFBundleDisplayName: "Tocks"
         INFOPLIST_FILE: Widgets/Info.plist
         APPLICATION_EXTENSION_API_ONLY: YES
 
-  ClearClockTests:
+  TocksTests:
     type: bundle.unit-test
     platform: macOS
     sources:
@@ -137,14 +137,14 @@ targets:
         GENERATE_INFOPLIST_FILE: YES
 
   # Mac App Store screenshots drawn off screen in the test runner: no app launch, nothing on the display.
-  # TEST_RUNNER_CLEARCLOCK_SHOTS=/some/folder xcodebuild test -scheme ClearClockSnapshots
-  ClearClockSnapshots:
+  # TEST_RUNNER_TOCKS_SHOTS=/some/folder xcodebuild test -scheme TocksSnapshots
+  TocksSnapshots:
     type: bundle.unit-test
     platform: macOS
     sources:
       - Snapshots
       - path: App
-        excludes: ["ClearClockApp.swift"]
+        excludes: ["TocksApp.swift"]
       - path: Shared
     settings:
       base:
@@ -152,15 +152,15 @@ targets:
         GENERATE_INFOPLIST_FILE: YES
 
 schemes:
-  ClearClock-iOS:
-    build: { targets: { ClearClock-iOS: all } }
+  Tocks-iOS:
+    build: { targets: { Tocks-iOS: all } }
     archive: { config: Release }
-  ClearClock-macOS:
-    build: { targets: { ClearClock-macOS: all } }
+  Tocks-macOS:
+    build: { targets: { Tocks-macOS: all } }
     archive: { config: Release }
-  ClearClockTests:
-    build: { targets: { ClearClockTests: all } }
-    test: { targets: [ClearClockTests] }
-  ClearClockSnapshots:
-    build: { targets: { ClearClockSnapshots: all } }
-    test: { targets: [ClearClockSnapshots] }
+  TocksTests:
+    build: { targets: { TocksTests: all } }
+    test: { targets: [TocksTests] }
+  TocksSnapshots:
+    build: { targets: { TocksSnapshots: all } }
+    test: { targets: [TocksSnapshots] }

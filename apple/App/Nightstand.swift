@@ -101,7 +101,7 @@ struct StandWorld: View {
             day.addLine(to: CGPoint(x: size.width, y: edge)); day.closeSubpath()
             var lit = g; lit.clip(to: day); dots(lit, 1)
             if let h = here, h.count == 2 {
-                let c = pt(h[0], h[1]); g.fill(Path(ellipseIn: CGRect(x: c.x - 3.5 * k, y: c.y - 3.5 * k, width: 7 * k, height: 7 * k)), with: .color(ink == .white ? .clearClock : ink))
+                let c = pt(h[0], h[1]); g.fill(Path(ellipseIn: CGRect(x: c.x - 3.5 * k, y: c.y - 3.5 * k, width: 7 * k, height: 7 * k)), with: .color(ink == .white ? .tocks : ink))
             }
         }
         .aspectRatio(2, contentMode: .fit)

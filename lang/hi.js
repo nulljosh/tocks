@@ -166,7 +166,7 @@
   "Import": "इम्पोर्ट",
   "Backup saved": "बैकअप सहेजा गया",
   "Restored {0} alarms and {1} cities": "{0} अलार्म और {1} शहर वापस आए",
-  "That file is not a Clear Clock backup": "यह Clear Clock बैकअप नहीं है",
+  "That file is not a Tocks backup": "यह Tocks बैकअप नहीं है",
   "That backup is empty": "बैकअप खाली है",
   "That link does not do anything": "यह लिंक कुछ नहीं करता",
   "Timer for {0}": "{0} का टाइमर",

@@ -22,8 +22,8 @@ struct ClockFace: View {
                 let s = Double(cal.component(.second, from: d)) + (still ? 0 : d.timeIntervalSince1970.truncatingRemainder(dividingBy: 1))
                 let m = Double(cal.component(.minute, from: d)) + s / 60, h = Double(cal.component(.hour, from: d) % 12) + m / 60
                 hand(g, c, h / 12, r * 0.5, 7, ink); hand(g, c, m / 60, r * 0.76, 5, ink)
-                hand(g, c, s / 60, r * 0.86, 2, .clearClock, tail: r * 0.15)
-                g.fill(Path(ellipseIn: CGRect(x: c.x - 5, y: c.y - 5, width: 10, height: 10)), with: .color(.clearClock))
+                hand(g, c, s / 60, r * 0.86, 2, .tocks, tail: r * 0.15)
+                g.fill(Path(ellipseIn: CGRect(x: c.x - 5, y: c.y - 5, width: 10, height: 10)), with: .color(.tocks))
             }
         }
         .aspectRatio(1, contentMode: .fit)
@@ -183,7 +183,7 @@ struct WorldMap: View {
             for z in zones {
                 guard let p = Cities.coords[z.city], p.count == 2 else { continue }
                 let c = pt(p[0], p[1]), end = p[1] + 180 > 300
-                g.fill(Path(ellipseIn: CGRect(x: c.x - 4, y: c.y - 4, width: 8, height: 8)), with: .color(.clearClock))
+                g.fill(Path(ellipseIn: CGRect(x: c.x - 4, y: c.y - 4, width: 8, height: 8)), with: .color(.tocks))
                 let t = at.formatted(Date.FormatStyle(timeZone: TimeZone(identifier: z.zone) ?? .current).hour().minute())
                 g.draw(Text("\(z.name) \(t)").font(.caption), at: CGPoint(x: c.x + (end ? -8 : 8), y: c.y), anchor: end ? .trailing : .leading)
             }

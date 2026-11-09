@@ -1,7 +1,7 @@
 #!/bin/bash
-# Mac App Store shots: one Clear Clock window on screen, five captures, then it quits. Ask Joshua before running.
-# Usage: scripts/mac-tour.sh <path to Clear Clock.app> <out dir>
-BIN="$1/Contents/MacOS/Clear Clock"; OUT="$2"; mkdir -p "$OUT"
+# Mac App Store shots: one Tocks window on screen, five captures, then it quits. Ask Joshua before running.
+# Usage: scripts/mac-tour.sh <path to Tocks.app> <out dir>
+BIN="$1/Contents/MacOS/Tocks"; OUT="$2"; mkdir -p "$OUT"
 trap 'pkill -f "^$BIN" 2>/dev/null' EXIT
 ( sleep 60; pkill -f "^$BIN" ) & GUARD=$!
 "$BIN" -demo -tour 2>/dev/null | while read -r tag name wid; do

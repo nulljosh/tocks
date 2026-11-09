@@ -1,4 +1,4 @@
-# Clear Clock Technical Whitepaper
+# Tocks Technical Whitepaper
 
 **v12** | October 2026
 
@@ -6,7 +6,7 @@ A clock for any browser. World clocks, alarms, a bedtime schedule, a stopwatch, 
 nightstand mode in one static page, with no account and no server behind it.
 
 The iPhone Clock app is the best small tool on the phone and it does not exist anywhere else.
-Clear Clock is the same set of tools as a page you can open on a Mac, a Windows laptop or an Android
+Tocks is the same set of tools as a page you can open on a Mac, a Windows laptop or an Android
 phone, and install like an app. It is plain HTML, CSS and JavaScript with no build step. A native
 SwiftUI app for iPhone, Mac and Watch ports the same helpers line for line and reads the same backups.
 
@@ -52,7 +52,7 @@ countdown in an iframe that loads only the pure helpers, so a host page needs no
 
 All state is `localStorage` on the device, behind a four line `store` that survives a blocked or
 full store by falling back to defaults. Nothing syncs between devices. Sync would need an account,
-which is the one thing Clear Clock is built to avoid.
+which is the one thing Tocks is built to avoid.
 
 `sw.js` caches the shell on first visit and serves it from cache after that, refreshing in the
 background. The page works with no signal. Changing the cache name in `sw.js` is how a release

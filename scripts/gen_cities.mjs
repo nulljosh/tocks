@@ -18,7 +18,7 @@ const fromZone = (city, zone) => zone.split('/').pop().replaceAll('_', ' ') === 
 const aliases = [...cities].filter(([c, z]) => !fromZone(c, z)).map(([c]) => c);
 const wiki = {};
 const q = new URLSearchParams({ action: 'wbgetentities', sites: 'enwiki', titles: aliases.map(c => TITLE[c] || c).join('|'), props: 'labels|sitelinks', sitefilter: 'enwiki', languages: LANGS.map(l => WIKI[l] || l).join('|'), format: 'json' });
-const res = await (await fetch('https://www.wikidata.org/w/api.php?' + q, { headers: { 'User-Agent': 'clearclock-gen/1.0 (https://clearclock.jaybulb.com)' } })).json();
+const res = await (await fetch('https://www.wikidata.org/w/api.php?' + q, { headers: { 'User-Agent': 'tocks-gen/1.0 (https://tocks.jaybulb.com)' } })).json();
 for (const e of Object.values(res.entities)) {
   const title = e.sitelinks?.enwiki?.title, city = aliases.find(c => (TITLE[c] || c) === title);
   if (city) wiki[city] = e.labels;

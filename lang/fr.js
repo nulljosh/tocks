@@ -166,7 +166,7 @@
   "Import": "Importer",
   "Backup saved": "Sauvegarde enregistrée",
   "Restored {0} alarms and {1} cities": "{0} alarmes et {1} villes restaurées",
-  "That file is not a Clear Clock backup": "Ce fichier n’est pas une sauvegarde Clear Clock",
+  "That file is not a Tocks backup": "Ce fichier n’est pas une sauvegarde Tocks",
   "That backup is empty": "Cette sauvegarde est vide",
   "That link does not do anything": "Ce lien ne fait rien",
   "Timer for {0}": "Minuteur de {0}",

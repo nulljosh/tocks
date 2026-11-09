@@ -1471,72 +1471,72 @@
         }
       }
     },
-    "Alarms are turned off for Clear Clock in Settings, so they cannot ring.": {
+    "Alarms are turned off for Tocks in Settings, so they cannot ring.": {
       "localizations": {
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "منبهات Clear Clock متوقفة في الإعدادات، لذا لا يمكنها أن ترن."
+            "value": "منبهات Tocks متوقفة في الإعدادات، لذا لا يمكنها أن ترن."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Wecker für Clear Clock sind in den Einstellungen aus und können nicht klingeln."
+            "value": "Wecker für Tocks sind in den Einstellungen aus und können nicht klingeln."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Las alarmas de Clear Clock están desactivadas en Ajustes, así que no pueden sonar."
+            "value": "Las alarmas de Tocks están desactivadas en Ajustes, así que no pueden sonar."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Les alarmes de Clear Clock sont désactivées dans Réglages, elles ne peuvent donc pas sonner."
+            "value": "Les alarmes de Tocks sont désactivées dans Réglages, elles ne peuvent donc pas sonner."
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "सेटिंग्स में Clear Clock के अलार्म बंद हैं, इसलिए वे बज नहीं सकते।"
+            "value": "सेटिंग्स में Tocks के अलार्म बंद हैं, इसलिए वे बज नहीं सकते।"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Le sveglie di Clear Clock sono disattivate in Impostazioni, quindi non possono suonare."
+            "value": "Le sveglie di Tocks sono disattivate in Impostazioni, quindi non possono suonare."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "設定でClear Clockのアラームがオフになっているため、鳴りません。"
+            "value": "設定でTocksのアラームがオフになっているため、鳴りません。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "설정에서 Clear Clock 알람이 꺼져 있어 울릴 수 없습니다."
+            "value": "설정에서 Tocks 알람이 꺼져 있어 울릴 수 없습니다."
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Wekkers voor Clear Clock staan uit in Instellingen, dus ze kunnen niet afgaan."
+            "value": "Wekkers voor Tocks staan uit in Instellingen, dus ze kunnen niet afgaan."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Os alarmes do Clear Clock estão desativados em Ajustes, então não podem tocar."
+            "value": "Os alarmes do Tocks estão desativados em Ajustes, então não podem tocar."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "Clear Clock 的闹钟已在设置中关闭，因此无法响铃。"
+            "value": "Tocks 的闹钟已在设置中关闭，因此无法响铃。"
           }
         }
       }
@@ -6791,72 +6791,72 @@
         }
       }
     },
-    "One file with your alarms, cities and timers. Works with Clear Clock on the web too.": {
+    "One file with your alarms, cities and timers. Works with Tocks on the web too.": {
       "localizations": {
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "ملف واحد بمنبهاتك ومدنك ومؤقتاتك. يعمل مع Clear Clock على الويب أيضًا."
+            "value": "ملف واحد بمنبهاتك ومدنك ومؤقتاتك. يعمل مع Tocks على الويب أيضًا."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Eine Datei mit deinen Weckern, Städten und Timern. Funktioniert auch mit Clear Clock im Web."
+            "value": "Eine Datei mit deinen Weckern, Städten und Timern. Funktioniert auch mit Tocks im Web."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Un archivo con tus alarmas, ciudades y temporizadores. También funciona con Clear Clock en la web."
+            "value": "Un archivo con tus alarmas, ciudades y temporizadores. También funciona con Tocks en la web."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Un fichier avec vos alarmes, villes et minuteurs. Fonctionne aussi avec Clear Clock sur le web."
+            "value": "Un fichier avec vos alarmes, villes et minuteurs. Fonctionne aussi avec Tocks sur le web."
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "आपके अलार्म, शहर और टाइमर एक फ़ाइल में। वेब पर Clear Clock के साथ भी चलती है।"
+            "value": "आपके अलार्म, शहर और टाइमर एक फ़ाइल में। वेब पर Tocks के साथ भी चलती है।"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Un file con sveglie, città e timer. Funziona anche con Clear Clock sul web."
+            "value": "Un file con sveglie, città e timer. Funziona anche con Tocks sul web."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "アラーム、都市、タイマーを1つのファイルに。Web版のClear Clockでも使えます。"
+            "value": "アラーム、都市、タイマーを1つのファイルに。Web版のTocksでも使えます。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "알람, 도시, 타이머를 파일 하나로. 웹의 Clear Clock에서도 됩니다."
+            "value": "알람, 도시, 타이머를 파일 하나로. 웹의 Tocks에서도 됩니다."
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Eén bestand met je wekkers, steden en timers. Werkt ook met Clear Clock op het web."
+            "value": "Eén bestand met je wekkers, steden en timers. Werkt ook met Tocks op het web."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Um arquivo com seus alarmes, cidades e timers. Funciona também com o Clear Clock na web."
+            "value": "Um arquivo com seus alarmes, cidades e timers. Funciona também com o Tocks na web."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "一个文件包含你的闹钟、城市和计时器，也适用于网页版 Clear Clock。"
+            "value": "一个文件包含你的闹钟、城市和计时器，也适用于网页版 Tocks。"
           }
         }
       }
@@ -10991,72 +10991,72 @@
         }
       }
     },
-    "That file is not a Clear Clock backup": {
+    "That file is not a Tocks backup": {
       "localizations": {
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "هذا الملف ليس نسخة Clear Clock"
+            "value": "هذا الملف ليس نسخة Tocks"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Diese Datei ist kein Clear Clock-Backup"
+            "value": "Diese Datei ist kein Tocks-Backup"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ese archivo no es una copia de Clear Clock"
+            "value": "Ese archivo no es una copia de Tocks"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ce fichier n’est pas une sauvegarde Clear Clock"
+            "value": "Ce fichier n’est pas une sauvegarde Tocks"
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "यह Clear Clock बैकअप नहीं है"
+            "value": "यह Tocks बैकअप नहीं है"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Questo file non è un backup di Clear Clock"
+            "value": "Questo file non è un backup di Tocks"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "Clear Clock のバックアップではありません"
+            "value": "Tocks のバックアップではありません"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "Clear Clock 백업 파일이 아닙니다"
+            "value": "Tocks 백업 파일이 아닙니다"
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Dat is geen Clear Clock-back-up"
+            "value": "Dat is geen Tocks-back-up"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Esse arquivo não é um backup do Clear Clock"
+            "value": "Esse arquivo não é um backup do Tocks"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "这不是 Clear Clock 备份文件"
+            "value": "这不是 Tocks 备份文件"
           }
         }
       }

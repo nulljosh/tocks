@@ -78,7 +78,7 @@ struct AlarmsView: View {
                     .onDelete { store.alarms.remove(atOffsets: $0) }
                 }
                 if scheduler.allowed == false {
-                    Section { Text("Alarms are turned off for Clear Clock in Settings, so they cannot ring.").foregroundStyle(.red) }
+                    Section { Text("Alarms are turned off for Tocks in Settings, so they cannot ring.").foregroundStyle(.red) }
                 }
             }
             .readableColumn()
@@ -117,7 +117,7 @@ struct DayChips: View {
             ForEach(0..<7) { d in
                 let on = days.contains(d)
                 Button(["S", "M", "T", "W", "T", "F", "S"][d]) { if on { days.removeAll { $0 == d } } else { days.append(d) } }
-                    .frame(maxWidth: .infinity, minHeight: 40).background(on ? Color.clearClock : Color.secondary.opacity(0.15), in: Circle())
+                    .frame(maxWidth: .infinity, minHeight: 40).background(on ? Color.tocks : Color.secondary.opacity(0.15), in: Circle())
                     .foregroundStyle(on ? .white : .primary).buttonStyle(.plain)
                     .accessibilityLabel(Clockwork.dayShort[d]).accessibilityAddTraits(on ? .isSelected : [])
             }

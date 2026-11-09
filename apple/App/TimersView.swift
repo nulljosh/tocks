@@ -102,7 +102,7 @@ struct TimerRow: View {
         HStack(spacing: 12) {
             ZStack {
                 Circle().stroke(.secondary.opacity(0.2), lineWidth: 5)
-                Circle().trim(from: 0, to: max(0, left) / timer.dur).stroke(Color.clearClock, style: .init(lineWidth: 5, lineCap: .round)).rotationEffect(.degrees(-90))
+                Circle().trim(from: 0, to: max(0, left) / timer.dur).stroke(Color.tocks, style: .init(lineWidth: 5, lineCap: .round)).rotationEffect(.degrees(-90))
             }
             .frame(width: 48, height: 48)
             VStack(alignment: .leading) {
@@ -143,17 +143,17 @@ struct SettingsView: View {
         NavigationStack {
             Form {
                 LabeledContent("Version", value: Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "")
-                Link("clearclock.jaybulb.com", destination: URL(string: "https://clearclock.jaybulb.com/")!)
+                Link("tocks.jaybulb.com", destination: URL(string: "https://tocks.jaybulb.com/")!)
                 Section {
                     Button("Export Backup") { exporting = true }
                     Button("Import Backup") { importing = true }
-                } header: { Text("Backup") } footer: { Text("One file with your alarms, cities and timers. Works with Clear Clock on the web too.") }
+                } header: { Text("Backup") } footer: { Text("One file with your alarms, cities and timers. Works with Tocks on the web too.") }
                 if let note { Text(note).foregroundStyle(.secondary) }
                 Section { Text("Everything stays on this device. No account, no tracking.").foregroundStyle(.secondary) }
             }
             .navigationTitle("Settings")
             .toolbar { ToolbarItem(placement: .confirmationAction) { Button("Done") { dismiss() } } }
-            .fileExporter(isPresented: $exporting, document: BackupFile(data: store.backup()), contentType: .json, defaultFilename: "clearclock-backup") { _ in }
+            .fileExporter(isPresented: $exporting, document: BackupFile(data: store.backup()), contentType: .json, defaultFilename: "tocks-backup") { _ in }
             .fileImporter(isPresented: $importing, allowedContentTypes: [.json]) { result in
                 do {
                     let url = try result.get(), ok = url.startAccessingSecurityScopedResource()

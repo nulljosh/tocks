@@ -1,4 +1,4 @@
 name = "clock"
 compatibility_date = "2026-10-01"
 assets = { directory = "." }
-routes = [{ pattern = "clearclock.jaybulb.com", custom_domain = true }, { pattern = "horula.jaybulb.com", custom_domain = true }, { pattern = "clock.jaybulb.com", custom_domain = true }]   # Worker and old host keep the old name on purpose
+routes = [{ pattern = "tocks.jaybulb.com", custom_domain = true }, { pattern = "horula.jaybulb.com", custom_domain = true }, { pattern = "clock.jaybulb.com", custom_domain = true }]   # Worker and old host keep the old name on purpose

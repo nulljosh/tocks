@@ -56,7 +56,7 @@ struct WatchAlarms: View {
                         store.alarms.append(AlarmItem(time: String(format: "%02d:%02d", c.hour ?? 0, c.minute ?? 0)))
                         adding = false
                     }
-                    .tint(.clearClock)
+                    .tint(.tocks)
                 }
             }
         }

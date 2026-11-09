@@ -1,4 +1,4 @@
-// Hero wall: Clear Clock, live. World clocks read the real time in each city (Intl), a timer runs down on its ring,
+// Hero wall: Tocks, live. World clocks read the real time in each city (Intl), a timer runs down on its ring,
 // a stopwatch counts laps. One tick a second; under reduced motion the hands still keep time, nothing else moves.
 (function () {
   var wall = document.getElementById('cwall'); if (!wall) return;

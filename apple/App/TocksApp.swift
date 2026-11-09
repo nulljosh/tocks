@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct ClearClockApp: App {
+struct TocksApp: App {
     @State private var store = Store()
     @State private var alarms = AlarmScheduler()
     #if os(macOS)
@@ -13,7 +13,7 @@ struct ClearClockApp: App {
             RootView()
                 .environment(store)
                 .environment(alarms)
-                .tint(.clearClock)
+                .tint(.tocks)
                 .task { if !Store.demo { await alarms.sync(store) } }
         }
         #if os(macOS)

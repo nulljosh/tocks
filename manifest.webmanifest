@@ -1,6 +1,6 @@
 {
-  "name": "Clear Clock",
-  "short_name": "Clear Clock",
+  "name": "Tocks",
+  "short_name": "Tocks",
   "description": "A clock, world clocks, alarms, sleep, a stopwatch and timers.",
   "start_url": "app",
   "scope": "./",

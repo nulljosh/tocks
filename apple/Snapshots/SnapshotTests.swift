@@ -5,20 +5,20 @@ import XCTest
 /// Draws each tab of the Mac app at 1440x900 into a window that is never put on screen, and saves PNGs.
 @MainActor final class SnapshotTests: XCTestCase {
     func testMacScreenshots() async throws {
-        guard let out = ProcessInfo.processInfo.environment["CLEARCLOCK_SHOTS"] else { throw XCTSkip("set TEST_RUNNER_CLEARCLOCK_SHOTS to a folder") }
+        guard let out = ProcessInfo.processInfo.environment["TOCKS_SHOTS"] else { throw XCTSkip("set TEST_RUNNER_TOCKS_SHOTS to a folder") }
         _ = NSApplication.shared
         let store = Store(defaults: Store.demoDefaults())
         UserDefaults.standard.set(true, forKey: "swAnalog")   // the dial makes the better screenshot
         UserDefaults.standard.set("flip", forKey: "standFace")   // QA the newest face
         for tab in AppTab.allCases {
             UserDefaults.standard.set(tab.rawValue, forKey: "tab")
-            try await render(RootView().environment(store).environment(AlarmScheduler()).tint(.clearClock), 1440, 900, "\(out)/clearclock-mac-\(tab.rawValue).png")
+            try await render(RootView().environment(store).environment(AlarmScheduler()).tint(.tocks), 1440, 900, "\(out)/tocks-mac-\(tab.rawValue).png")
         }
         // The city sheet, with a name of your own, for QA rather than the store.
         store.zones[0].nick = "Mum"
-        try await render(CityDetail(city: store.zones[0]).environment(store).tint(.clearClock), 480, 520, "\(out)/clearclock-mac-city.png")
-        try await render(List { CountdownSection() }.environment(store).tint(.clearClock), 520, 320, "\(out)/clearclock-mac-countdowns.png")
-        try await render(Nightstand().environment(store).tint(.clearClock), 900, 500, "\(out)/clearclock-mac-nightstand.png")
+        try await render(CityDetail(city: store.zones[0]).environment(store).tint(.tocks), 480, 520, "\(out)/tocks-mac-city.png")
+        try await render(List { CountdownSection() }.environment(store).tint(.tocks), 520, 320, "\(out)/tocks-mac-countdowns.png")
+        try await render(Nightstand().environment(store).tint(.tocks), 900, 500, "\(out)/tocks-mac-nightstand.png")
     }
 
     private func render(_ view: some View, _ width: CGFloat, _ height: CGFloat, _ path: String) async throws {
