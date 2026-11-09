@@ -91,3 +91,6 @@ App Store screens of Alarmy, Rise, Sleep Cycle, MultiTimer, Timer+, World Clock 
 
 ## Ingested 2026-11-06
 - [ ] iPhone shows "App Not Available" because iOS 6.0.0 has a 4.3(a) rejection and only macOS is live. Appeal sent 2026-10-28, no reply from Apple yet. Nothing to do until they answer.
+
+## Ingested 2026-11-08
+- [ ] Name sucks. Needs simpler name. Like Time or Clock.
