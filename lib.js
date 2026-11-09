@@ -105,8 +105,8 @@ function spanText(s) {
 const BACKUP_KEYS = ['alarms', 'sleep', 'zones', 'recents', 'presets', 'countdowns', 'routines'];
 const makeBackup = (state) => JSON.stringify({ app: 'clock', v: 1, saved: new Date().toISOString(), ...Object.fromEntries(BACKUP_KEYS.map(k => [k, state[k]])) }, null, 2);
 function parseBackup(text) {
-  let d; try { d = JSON.parse(text); } catch { throw new Error(tr('That file is not a Horula backup')); }
-  if (!d || d.app !== 'clock' || d.v !== 1) throw new Error(tr('That file is not a Horula backup'));
+  let d; try { d = JSON.parse(text); } catch { throw new Error(tr('That file is not a Noonday backup')); }
+  if (!d || d.app !== 'clock' || d.v !== 1) throw new Error(tr('That file is not a Noonday backup'));
   const str = (v, n) => typeof v === 'string' ? v.slice(0, n) : '';
   const days = (v) => Array.isArray(v) ? [...new Set(v.filter(x => Number.isInteger(x) && x >= 0 && x <= 6))] : [];
   const zoneOk = (z) => { try { new Intl.DateTimeFormat('en-US', { timeZone: z }); return true; } catch { return false; } };

@@ -1,12 +1,12 @@
-<img src="icon.svg" width="80" height="80" alt="Horula icon">
+<img src="icon.svg" width="80" height="80" alt="Noonday icon">
 
 ![license](https://img.shields.io/badge/license-MIT-green)
 
-A clock that does what the iPhone clock does, in a browser tab. Horula is Latin for "little hour". Formerly Clock.
+A clock that does what the iPhone clock does, in a browser tab. Formerly Horula, and Clock before that.
 
 World clocks, alarms, a bedtime schedule, a stopwatch, timers and a nightstand mode, in twelve languages. Native on iPhone and Mac too. It loads once, works offline and installs to your home screen or dock. No account, no tracking, one small page.
 
-**[horula.jaybulb.com →](https://horula.jaybulb.com)** · **[Open the app →](https://horula.jaybulb.com/app)**
+**[noonday.jaybulb.com →](https://noonday.jaybulb.com)** · **[Open the app →](https://noonday.jaybulb.com/app)**
 
 <img src="docs/screenshots/web-light.png" width="280" alt="World Clock in light mode"> <img src="docs/screenshots/web-dark.png" width="280" alt="World Clock in dark mode">
 
@@ -26,8 +26,8 @@ World clocks, alarms, a bedtime schedule, a stopwatch, timers and a nightstand m
 One iframe, no script on your side. It follows light and dark on its own.
 
 ```html
-<iframe src="https://horula.jaybulb.com/embed?city=Tokyo" width="320" height="120" style="border:0"></iframe>
-<iframe src="https://horula.jaybulb.com/embed?to=2026-12-25T00:00&label=Christmas" width="320" height="140" style="border:0"></iframe>
+<iframe src="https://noonday.jaybulb.com/embed?city=Tokyo" width="320" height="120" style="border:0"></iframe>
+<iframe src="https://noonday.jaybulb.com/embed?to=2026-12-25T00:00&label=Christmas" width="320" height="140" style="border:0"></iframe>
 ```
 
 Add `&face=digital` to drop the dial, `&theme=dark` or `&theme=light` to pin a theme, `&bg=none` for a see-through background.
@@ -36,7 +36,7 @@ Add `&face=digital` to drop the dial, `&theme=dark` or `&theme=light` to pin a t
 
 ```
 python3 -m http.server 8000     # then open localhost:8000
-./deploy.sh                      # Cloudflare Worker at horula.jaybulb.com; a push deploys nothing
+./deploy.sh                      # Cloudflare Worker at noonday.jaybulb.com; a push deploys nothing
 ```
 
 No build step and no dependencies. State lives in `localStorage` on the device.

@@ -18,9 +18,9 @@ struct StopwatchDial: View {
             for i in 0..<30 { line(m, Double(i) * .pi / 15, mr * (i % 5 == 0 ? 0.74 : 0.84), mr * 0.92, i % 5 == 0 ? 1 : 0.5, .secondary) }
             line(m, total / 60 / 30 * 2 * .pi, 0, mr * 0.8, 1.6, .primary)
             g.draw(Text(Clockwork.stopwatchText(total)).font(.system(size: r * 0.12)).monospacedDigit(), at: CGPoint(x: c.x, y: c.y + r * 0.42))
-            if let lap { line(c, lap.truncatingRemainder(dividingBy: 60) / 60 * 2 * .pi, -r * 0.15, r * 0.86, 2, .horula) }
+            if let lap { line(c, lap.truncatingRemainder(dividingBy: 60) / 60 * 2 * .pi, -r * 0.15, r * 0.86, 2, .noonday) }
             line(c, total.truncatingRemainder(dividingBy: 60) / 60 * 2 * .pi, -r * 0.15, r * 0.86, 2, .primary)
-            g.fill(Path(ellipseIn: CGRect(x: c.x - 5, y: c.y - 5, width: 10, height: 10)), with: .color(.horula))
+            g.fill(Path(ellipseIn: CGRect(x: c.x - 5, y: c.y - 5, width: 10, height: 10)), with: .color(.noonday))
         }
         .aspectRatio(1, contentMode: .fit)
         .accessibilityLabel(Clockwork.stopwatchText(total))

@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>NSAlarmKitUsageDescription</key>
-	<string>Horula rings your alarms and timers on time, even when the app is closed or your phone is on silent.</string>
+	<string>Noonday rings your alarms and timers on time, even when the app is closed or your phone is on silent.</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
 			<key>CFBundleURLName</key>
 			<string>com.nulljosh.clock</string>
 			<key>CFBundleURLSchemes</key>
-			<array><string>horula</string></array>
+			<array><string>noonday</string></array>
 		</dict>
 	</array>
 </dict>

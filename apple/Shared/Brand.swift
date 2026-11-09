@@ -3,12 +3,12 @@ import SwiftUI
 import AlarmKit
 
 /// What an alarm carries into the system alert and the Live Activity.
-struct HorulaAlarm: AlarmMetadata { var label = "" }
+struct NoondayAlarm: AlarmMetadata { var label = "" }
 #endif
 
 extension Color {
     /// The one brand colour: #0a5fd6, lighter in dark mode like the web tokens.
-    static let horula = Color(light: .init(red: 0x0a / 255, green: 0x5f / 255, blue: 0xd6 / 255), dark: .init(red: 0x4d / 255, green: 0xa3 / 255, blue: 1))
+    static let noonday = Color(light: .init(red: 0x0a / 255, green: 0x5f / 255, blue: 0xd6 / 255), dark: .init(red: 0x4d / 255, green: 0xa3 / 255, blue: 1))
     init(light: Color, dark: Color) {
         #if os(watchOS)
         self = dark   // the watch is always dark

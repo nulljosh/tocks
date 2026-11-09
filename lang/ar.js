@@ -166,7 +166,7 @@
   "Import": "استيراد",
   "Backup saved": "تم حفظ النسخة",
   "Restored {0} alarms and {1} cities": "تمت استعادة {0} منبهات و{1} مدن",
-  "That file is not a Horula backup": "هذا الملف ليس نسخة Horula",
+  "That file is not a Noonday backup": "هذا الملف ليس نسخة Noonday",
   "That backup is empty": "النسخة فارغة",
   "That link does not do anything": "هذا الرابط لا يفعل شيئًا",
   "Timer for {0}": "مؤقت لمدة {0}",

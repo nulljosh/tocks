@@ -1,4 +1,4 @@
-name: Horula
+name: Noonday
 options:
   bundleIdPrefix: com.nulljosh
   deploymentTarget:
@@ -16,53 +16,53 @@ settings:
     CODE_SIGN_STYLE: Automatic
     ENABLE_USER_SCRIPT_SANDBOXING: NO
     GENERATE_INFOPLIST_FILE: YES
-    INFOPLIST_KEY_CFBundleDisplayName: Horula
+    INFOPLIST_KEY_CFBundleDisplayName: Noonday
     INFOPLIST_KEY_ITSAppUsesNonExemptEncryption: NO
 
 targets:
-  Horula-iOS:
+  Noonday-iOS:
     type: application
     platform: iOS
     sources:
       - path: App
       - path: Shared
-      - path: ../Horula.icon
+      - path: ../Noonday.icon
     dependencies:
-      - target: HorulaWidgets-iOS
-      # HorulaWatch joins in 6.1: Watch screenshots need a watchOS simulator runtime (no disk for it on 2026-10-25)
+      - target: NoondayWidgets-iOS
+      # NoondayWatch joins in 6.1: Watch screenshots need a watchOS simulator runtime (no disk for it on 2026-10-25)
     settings:
       base:
-        PRODUCT_NAME: Horula
+        PRODUCT_NAME: Noonday
         PRODUCT_BUNDLE_IDENTIFIER: com.nulljosh.clock   # kept from before the rename: it is the App Store record's id
         INFOPLIST_FILE: iOS/Info.plist
-        CODE_SIGN_ENTITLEMENTS: iOS/Horula.entitlements
+        CODE_SIGN_ENTITLEMENTS: iOS/Noonday.entitlements
         TARGETED_DEVICE_FAMILY: "1"                      # iPhone first; iPad needs its own screenshot set
-        ASSETCATALOG_COMPILER_APPICON_NAME: Horula
+        ASSETCATALOG_COMPILER_APPICON_NAME: Noonday
         INFOPLIST_KEY_UILaunchScreen_Generation: YES
         INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
         INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.utilities
 
-  Horula-macOS:
+  Noonday-macOS:
     type: application
     platform: macOS
     sources:
       - path: App
       - path: Shared
-      - path: ../Horula.icon
+      - path: ../Noonday.icon
     dependencies:
-      - target: HorulaWidgets-macOS
+      - target: NoondayWidgets-macOS
     settings:
       base:
-        PRODUCT_NAME: Horula
+        PRODUCT_NAME: Noonday
         PRODUCT_BUNDLE_IDENTIFIER: com.nulljosh.clock   # same id as iOS: universal purchase, one App Store record
         INFOPLIST_FILE: macOS/Info.plist
-        CODE_SIGN_ENTITLEMENTS: macOS/Horula.entitlements
+        CODE_SIGN_ENTITLEMENTS: macOS/Noonday.entitlements
         ENABLE_HARDENED_RUNTIME: YES
-        ASSETCATALOG_COMPILER_APPICON_NAME: Horula
+        ASSETCATALOG_COMPILER_APPICON_NAME: Noonday
         INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.utilities
-        PRODUCT_MODULE_NAME: Horula_macOS
+        PRODUCT_MODULE_NAME: Noonday_macOS
 
-  HorulaWidgets-iOS:
+  NoondayWidgets-iOS:
     type: app-extension
     platform: iOS
     sources: &widgetSources
@@ -71,59 +71,59 @@ targets:
         excludes: ["AlarmScheduler.swift"]
     settings:
       base:
-        PRODUCT_NAME: HorulaWidgets
+        PRODUCT_NAME: NoondayWidgets
         PRODUCT_BUNDLE_IDENTIFIER: com.nulljosh.clock.widgets
         CODE_SIGN_ENTITLEMENTS: Widgets/Widgets.entitlements
         TARGETED_DEVICE_FAMILY: "1"
-        INFOPLIST_KEY_CFBundleDisplayName: Horula
+        INFOPLIST_KEY_CFBundleDisplayName: Noonday
         INFOPLIST_FILE: Widgets/Info.plist
         APPLICATION_EXTENSION_API_ONLY: YES
 
-  HorulaWidgets-macOS:
+  NoondayWidgets-macOS:
     type: app-extension
     platform: macOS
     sources: *widgetSources
     settings:
       base:
-        PRODUCT_NAME: HorulaWidgets
+        PRODUCT_NAME: NoondayWidgets
         PRODUCT_BUNDLE_IDENTIFIER: com.nulljosh.clock.widgets
         CODE_SIGN_ENTITLEMENTS: Widgets/Widgets-mac.entitlements
-        INFOPLIST_KEY_CFBundleDisplayName: Horula
+        INFOPLIST_KEY_CFBundleDisplayName: Noonday
         INFOPLIST_FILE: Widgets/Info.plist
         APPLICATION_EXTENSION_API_ONLY: YES
-        PRODUCT_MODULE_NAME: HorulaWidgets_macOS
+        PRODUCT_MODULE_NAME: NoondayWidgets_macOS
 
-  HorulaWatch:
+  NoondayWatch:
     type: application
     platform: watchOS
     sources:
       - path: Watch
       - path: Shared
-      - path: ../Horula.icon
+      - path: ../Noonday.icon
     dependencies:
-      - target: HorulaWatchWidgets
+      - target: NoondayWatchWidgets
     settings:
       base:
-        PRODUCT_NAME: Horula
+        PRODUCT_NAME: Noonday
         PRODUCT_BUNDLE_IDENTIFIER: com.nulljosh.clock.watchkitapp
         INFOPLIST_KEY_WKCompanionAppBundleIdentifier: com.nulljosh.clock
         INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp: YES
-        ASSETCATALOG_COMPILER_APPICON_NAME: Horula
+        ASSETCATALOG_COMPILER_APPICON_NAME: Noonday
         SKIP_INSTALL: YES
 
-  HorulaWatchWidgets:
+  NoondayWatchWidgets:
     type: app-extension
     platform: watchOS
     sources: *widgetSources
     settings:
       base:
-        PRODUCT_NAME: HorulaWatchWidgets
+        PRODUCT_NAME: NoondayWatchWidgets
         PRODUCT_BUNDLE_IDENTIFIER: com.nulljosh.clock.watchkitapp.widgets
-        INFOPLIST_KEY_CFBundleDisplayName: Horula
+        INFOPLIST_KEY_CFBundleDisplayName: Noonday
         INFOPLIST_FILE: Widgets/Info.plist
         APPLICATION_EXTENSION_API_ONLY: YES
 
-  HorulaTests:
+  NoondayTests:
     type: bundle.unit-test
     platform: macOS
     sources:
@@ -137,14 +137,14 @@ targets:
         GENERATE_INFOPLIST_FILE: YES
 
   # Mac App Store screenshots drawn off screen in the test runner: no app launch, nothing on the display.
-  # TEST_RUNNER_HORULA_SHOTS=/some/folder xcodebuild test -scheme HorulaSnapshots
-  HorulaSnapshots:
+  # TEST_RUNNER_NOONDAY_SHOTS=/some/folder xcodebuild test -scheme NoondaySnapshots
+  NoondaySnapshots:
     type: bundle.unit-test
     platform: macOS
     sources:
       - Snapshots
       - path: App
-        excludes: ["HorulaApp.swift"]
+        excludes: ["NoondayApp.swift"]
       - path: Shared
     settings:
       base:
@@ -152,15 +152,15 @@ targets:
         GENERATE_INFOPLIST_FILE: YES
 
 schemes:
-  Horula-iOS:
-    build: { targets: { Horula-iOS: all } }
+  Noonday-iOS:
+    build: { targets: { Noonday-iOS: all } }
     archive: { config: Release }
-  Horula-macOS:
-    build: { targets: { Horula-macOS: all } }
+  Noonday-macOS:
+    build: { targets: { Noonday-macOS: all } }
     archive: { config: Release }
-  HorulaTests:
-    build: { targets: { HorulaTests: all } }
-    test: { targets: [HorulaTests] }
-  HorulaSnapshots:
-    build: { targets: { HorulaSnapshots: all } }
-    test: { targets: [HorulaSnapshots] }
+  NoondayTests:
+    build: { targets: { NoondayTests: all } }
+    test: { targets: [NoondayTests] }
+  NoondaySnapshots:
+    build: { targets: { NoondaySnapshots: all } }
+    test: { targets: [NoondaySnapshots] }

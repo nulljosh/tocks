@@ -1,11 +1,11 @@
 import SwiftUI
 import UserNotifications
 
-// Horula on the wrist: world clocks, a stopwatch, timers and alarms. The watch keeps its own Store,
+// Noonday on the wrist: world clocks, a stopwatch, timers and alarms. The watch keeps its own Store,
 // and its alarms and timers ring as notifications (watchOS has no AlarmKit), scheduled by AlarmScheduler.
 
 @main
-struct HorulaWatchApp: App {
+struct NoondayWatchApp: App {
     @State private var store = Store()
     @AppStorage("wpage") private var page = 0   // -wpage 1 on launch picks a page, for screenshots
     var body: some Scene {
@@ -18,7 +18,7 @@ struct HorulaWatchApp: App {
             }
             .tabViewStyle(.verticalPage)
             .environment(store)
-            .tint(.horula)
+            .tint(.noonday)
         }
     }
 }

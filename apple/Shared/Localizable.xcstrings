@@ -1471,72 +1471,72 @@
         }
       }
     },
-    "Alarms are turned off for Horula in Settings, so they cannot ring.": {
+    "Alarms are turned off for Noonday in Settings, so they cannot ring.": {
       "localizations": {
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "منبهات Horula متوقفة في الإعدادات، لذا لا يمكنها أن ترن."
+            "value": "منبهات Noonday متوقفة في الإعدادات، لذا لا يمكنها أن ترن."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Wecker für Horula sind in den Einstellungen aus und können nicht klingeln."
+            "value": "Wecker für Noonday sind in den Einstellungen aus und können nicht klingeln."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Las alarmas de Horula están desactivadas en Ajustes, así que no pueden sonar."
+            "value": "Las alarmas de Noonday están desactivadas en Ajustes, así que no pueden sonar."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Les alarmes de Horula sont désactivées dans Réglages, elles ne peuvent donc pas sonner."
+            "value": "Les alarmes de Noonday sont désactivées dans Réglages, elles ne peuvent donc pas sonner."
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "सेटिंग्स में Horula के अलार्म बंद हैं, इसलिए वे बज नहीं सकते।"
+            "value": "सेटिंग्स में Noonday के अलार्म बंद हैं, इसलिए वे बज नहीं सकते।"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Le sveglie di Horula sono disattivate in Impostazioni, quindi non possono suonare."
+            "value": "Le sveglie di Noonday sono disattivate in Impostazioni, quindi non possono suonare."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "設定でHorulaのアラームがオフになっているため、鳴りません。"
+            "value": "設定でNoondayのアラームがオフになっているため、鳴りません。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "설정에서 Horula 알람이 꺼져 있어 울릴 수 없습니다."
+            "value": "설정에서 Noonday 알람이 꺼져 있어 울릴 수 없습니다."
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Wekkers voor Horula staan uit in Instellingen, dus ze kunnen niet afgaan."
+            "value": "Wekkers voor Noonday staan uit in Instellingen, dus ze kunnen niet afgaan."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Os alarmes do Horula estão desativados em Ajustes, então não podem tocar."
+            "value": "Os alarmes do Noonday estão desativados em Ajustes, então não podem tocar."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "Horula 的闹钟已在设置中关闭，因此无法响铃。"
+            "value": "Noonday 的闹钟已在设置中关闭，因此无法响铃。"
           }
         }
       }
@@ -6791,72 +6791,72 @@
         }
       }
     },
-    "One file with your alarms, cities and timers. Works with Horula on the web too.": {
+    "One file with your alarms, cities and timers. Works with Noonday on the web too.": {
       "localizations": {
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "ملف واحد بمنبهاتك ومدنك ومؤقتاتك. يعمل مع Horula على الويب أيضًا."
+            "value": "ملف واحد بمنبهاتك ومدنك ومؤقتاتك. يعمل مع Noonday على الويب أيضًا."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Eine Datei mit deinen Weckern, Städten und Timern. Funktioniert auch mit Horula im Web."
+            "value": "Eine Datei mit deinen Weckern, Städten und Timern. Funktioniert auch mit Noonday im Web."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Un archivo con tus alarmas, ciudades y temporizadores. También funciona con Horula en la web."
+            "value": "Un archivo con tus alarmas, ciudades y temporizadores. También funciona con Noonday en la web."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Un fichier avec vos alarmes, villes et minuteurs. Fonctionne aussi avec Horula sur le web."
+            "value": "Un fichier avec vos alarmes, villes et minuteurs. Fonctionne aussi avec Noonday sur le web."
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "आपके अलार्म, शहर और टाइमर एक फ़ाइल में। वेब पर Horula के साथ भी चलती है।"
+            "value": "आपके अलार्म, शहर और टाइमर एक फ़ाइल में। वेब पर Noonday के साथ भी चलती है।"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Un file con sveglie, città e timer. Funziona anche con Horula sul web."
+            "value": "Un file con sveglie, città e timer. Funziona anche con Noonday sul web."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "アラーム、都市、タイマーを1つのファイルに。Web版のHorulaでも使えます。"
+            "value": "アラーム、都市、タイマーを1つのファイルに。Web版のNoondayでも使えます。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "알람, 도시, 타이머를 파일 하나로. 웹의 Horula에서도 됩니다."
+            "value": "알람, 도시, 타이머를 파일 하나로. 웹의 Noonday에서도 됩니다."
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Eén bestand met je wekkers, steden en timers. Werkt ook met Horula op het web."
+            "value": "Eén bestand met je wekkers, steden en timers. Werkt ook met Noonday op het web."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Um arquivo com seus alarmes, cidades e timers. Funciona também com o Horula na web."
+            "value": "Um arquivo com seus alarmes, cidades e timers. Funciona também com o Noonday na web."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "一个文件包含你的闹钟、城市和计时器，也适用于网页版 Horula。"
+            "value": "一个文件包含你的闹钟、城市和计时器，也适用于网页版 Noonday。"
           }
         }
       }
@@ -10991,72 +10991,72 @@
         }
       }
     },
-    "That file is not a Horula backup": {
+    "That file is not a Noonday backup": {
       "localizations": {
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "هذا الملف ليس نسخة Horula"
+            "value": "هذا الملف ليس نسخة Noonday"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Diese Datei ist kein Horula-Backup"
+            "value": "Diese Datei ist kein Noonday-Backup"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ese archivo no es una copia de Horula"
+            "value": "Ese archivo no es una copia de Noonday"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ce fichier n’est pas une sauvegarde Horula"
+            "value": "Ce fichier n’est pas une sauvegarde Noonday"
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "यह Horula बैकअप नहीं है"
+            "value": "यह Noonday बैकअप नहीं है"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Questo file non è un backup di Horula"
+            "value": "Questo file non è un backup di Noonday"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "Horula のバックアップではありません"
+            "value": "Noonday のバックアップではありません"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "Horula 백업 파일이 아닙니다"
+            "value": "Noonday 백업 파일이 아닙니다"
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Dat is geen Horula-back-up"
+            "value": "Dat is geen Noonday-back-up"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Esse arquivo não é um backup do Horula"
+            "value": "Esse arquivo não é um backup do Noonday"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "这不是 Horula 备份文件"
+            "value": "这不是 Noonday 备份文件"
           }
         }
       }

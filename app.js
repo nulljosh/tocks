@@ -75,7 +75,7 @@ $('settingsOpen').onclick = () => $('settingsSheet').showModal();
 $('exportBtn').onclick = () => {
   const a = document.createElement('a');
   a.href = URL.createObjectURL(new Blob([makeBackup({ alarms, sleep, zones, recents, presets, countdowns, routines })], { type: 'application/json' }));
-  a.download = `horula-backup-${new Date().toISOString().slice(0, 10)}.json`; a.click(); URL.revokeObjectURL(a.href);
+  a.download = `noonday-backup-${new Date().toISOString().slice(0, 10)}.json`; a.click(); URL.revokeObjectURL(a.href);
   toast(tr('Backup saved'));
 };
 $('importBtn').onclick = () => $('importFile').click();

@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct HorulaApp: App {
+struct NoondayApp: App {
     @State private var store = Store()
     @State private var alarms = AlarmScheduler()
     #if os(macOS)
@@ -13,7 +13,7 @@ struct HorulaApp: App {
             RootView()
                 .environment(store)
                 .environment(alarms)
-                .tint(.horula)
+                .tint(.noonday)
                 .task { if !Store.demo { await alarms.sync(store) } }
         }
         #if os(macOS)

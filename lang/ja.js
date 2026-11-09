@@ -166,7 +166,7 @@
   "Import": "読み込む",
   "Backup saved": "バックアップを保存しました",
   "Restored {0} alarms and {1} cities": "アラーム{0}件と都市{1}件を復元しました",
-  "That file is not a Horula backup": "Horula のバックアップではありません",
+  "That file is not a Noonday backup": "Noonday のバックアップではありません",
   "That backup is empty": "バックアップが空です",
   "That link does not do anything": "このリンクでは何も起きません",
   "Timer for {0}": "{0}のタイマー",

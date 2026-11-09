@@ -151,7 +151,7 @@ enum Backup {
     struct Parsed { var alarms: [AlarmItem]?; var zones: [City]?; var recents: [Recent]?; var presets: [Recent]?; var countdowns: [Countdown]?; var routines: [Routine]?; var sleep: SleepPlan? }
     enum Failure: LocalizedError {
         case notBackup, empty
-        var errorDescription: String? { self == .notBackup ? "That file is not a Horula backup" : "That backup is empty" }
+        var errorDescription: String? { self == .notBackup ? "That file is not a Noonday backup" : "That backup is empty" }
     }
 
     static func parse(_ data: Data) throws -> Parsed {

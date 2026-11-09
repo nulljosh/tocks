@@ -16,7 +16,7 @@ struct RootView: View {
     }
 }
 
-/// horula://timer?d=10m, horula://alarm?t=07:30&label=Gym, horula://tab/alarms. Same idea as the web's #timer=10m links.
+/// noonday://timer?d=10m, noonday://alarm?t=07:30&label=Gym, noonday://tab (horula:// still works)/alarms. Same idea as the web's #timer=10m links.
 enum Links {
     static func handle(_ url: URL, tab: Binding<AppTab>, store: Store) {
         let q = URLComponents(url: url, resolvingAgainstBaseURL: false)?.queryItems ?? []

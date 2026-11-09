@@ -166,7 +166,7 @@
   "Import": "가져오기",
   "Backup saved": "백업을 저장했습니다",
   "Restored {0} alarms and {1} cities": "알람 {0}개와 도시 {1}개를 복원했습니다",
-  "That file is not a Horula backup": "Horula 백업 파일이 아닙니다",
+  "That file is not a Noonday backup": "Noonday 백업 파일이 아닙니다",
   "That backup is empty": "백업이 비어 있습니다",
   "That link does not do anything": "이 링크는 동작하지 않습니다",
   "Timer for {0}": "{0} 타이머",

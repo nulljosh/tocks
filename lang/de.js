@@ -166,7 +166,7 @@
   "Import": "Importieren",
   "Backup saved": "Backup gesichert",
   "Restored {0} alarms and {1} cities": "{0} Wecker und {1} Städte wiederhergestellt",
-  "That file is not a Horula backup": "Diese Datei ist kein Horula-Backup",
+  "That file is not a Noonday backup": "Diese Datei ist kein Noonday-Backup",
   "That backup is empty": "Dieses Backup ist leer",
   "That link does not do anything": "Dieser Link bewirkt nichts",
   "Timer for {0}": "Timer für {0}",
