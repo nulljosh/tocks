@@ -8,13 +8,13 @@ A `/loop` working through this repo's roadmap and GitHub issues, with the sessio
 
 Horula is now Tocks. The repo and folder are `tocks`, the site is tocks.jaybulb.com, and the App Store app is 6826916379.
 
-iOS 6.0.1 shows DEVELOPER_REJECTED on App Store Connect (checked 2026-11-08), so it is not in review and needs a new submission. iOS and Mac 6.0.0 are on sale.
+iOS and Mac 6.0.1 are WAITING_FOR_REVIEW (checked 2026-11-08). iOS and Mac 6.0.0 are on sale until 6.0.1 clears.
 
 Open roadmap items: the Apple Watch app (built, screenshots taken, ships in 6.1 on Joshua's yes) and the Linux Flatpak and .deb. The name item is done.
 
 ## Next, in order
 
-1. Resubmit iOS 6.0.1 on Joshua's yes, then check `asc versions list --app 6826916379` until it shows WAITING_FOR_REVIEW or better.
+1. Check `asc versions list --app 6826916379` for the 6.0.1 result. If it cleared, record it in the roadmap and the vault.
 2. Apple Watch app for 6.1, once Joshua says yes to shipping it.
 3. Linux Flatpak and .deb, both opening the same app as the web build.
 
