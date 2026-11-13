@@ -94,5 +94,5 @@ App Store screens of Alarmy, Rise, Sleep Cycle, MultiTimer, Timer+, World Clock 
 ## Ingested 2026-11-08
 
 ## Ingested 2026-11-13
-- [ ] Note: "Rejected: Co-stanza, Tocks". Root roadmap on 2026-11-08 had Tocks iOS and Mac waiting on Apple, so this rejection is newer. Read the thread once asc is back. Could not re-pull today: the asc API is blocked by an unaccepted Apple agreement (see vault blocked-on-joshua.md).
+- [ ] iOS 6.0.1 (build 202611081837) rejected 2026-11-11, guideline 2.5.4: `audio` in UIBackgroundModes but the reviewer heard nothing in the background. The mode is real: Sleep Sounds (Alarms tab, `apple/App/SleepSounds.swift`) plays with the phone locked, shipped since 2026-10-26. Fix is a reply, not code: tell them where it is, attach a screen recording from a real iPhone (start a sleep sound, go to the Home Screen, sound keeps playing), and take their offer to approve this build as is. Reply drafted 2026-11-13, waits on Joshua's yes and his recording. Do not remove the mode, that kills Sleep Sounds on lock.
 - [ ] App shouldn't require user to scroll. Needs a bottom nav tab bar, to match the Apple Clock app.
