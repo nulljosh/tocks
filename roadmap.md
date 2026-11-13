@@ -92,3 +92,7 @@ App Store screens of Alarmy, Rise, Sleep Cycle, MultiTimer, Timer+, World Clock 
 ## Ingested 2026-11-06
 
 ## Ingested 2026-11-08
+
+## Ingested 2026-11-13
+- [ ] Note: "Rejected: Co-stanza, Tocks". Root roadmap on 2026-11-08 had Tocks iOS and Mac waiting on Apple, so this rejection is newer. Read the thread once asc is back. Could not re-pull today: the asc API is blocked by an unaccepted Apple agreement (see vault blocked-on-joshua.md).
+- [ ] App shouldn't require user to scroll. Needs a bottom nav tab bar, to match the Apple Clock app.
